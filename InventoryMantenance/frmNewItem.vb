@@ -1,10 +1,13 @@
 ﻿Public Class frmNewItem
+    Public InvItem As InvItem
     ' Add a statement here that declares a public inventory item.
     Private Sub btnSave_Click(sender As Object,
     e As EventArgs) Handles btnSave.Click
         If IsValidData() Then
             ' Add code here that creates a new item
             ' and closes the form.
+            Dim invItem = New InvItem(txtItemNo.Text, txtDescription.Text, txtPrice.Text)
+            Me.Close()
         End If
     End Sub
 

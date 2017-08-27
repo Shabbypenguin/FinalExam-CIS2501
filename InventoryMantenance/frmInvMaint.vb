@@ -1,4 +1,5 @@
 ﻿Public Class frmInvMaint
+    Public invItems As List(Of InvItem)
     ' Add a statement here that declares the list of items.
     Private Sub frmInvMaint_Load(sender As Object,
     e As EventArgs) Handles MyBase.Load
